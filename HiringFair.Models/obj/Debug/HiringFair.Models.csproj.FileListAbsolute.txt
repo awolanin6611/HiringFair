@@ -1,0 +1,16 @@
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\HiringFair.Models.dll.config
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\HiringFair.Models.dll
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\HiringFair.Models.pdb
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\EntityFramework.dll
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\EntityFramework.xml
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\BlueBadge\HiringFair\HiringFair.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\BlueBadge\HiringFair\HiringFair.Models\obj\Debug\HiringFair.Models.csprojAssemblyReference.cache
+C:\BlueBadge\HiringFair\HiringFair.Models\obj\Debug\HiringFair.Models.csproj.CoreCompileInputs.cache
+C:\BlueBadge\HiringFair\HiringFair.Models\obj\Debug\HiringFair.Models.csproj.CopyComplete
+C:\BlueBadge\HiringFair\HiringFair.Models\obj\Debug\HiringFair.Models.dll
+C:\BlueBadge\HiringFair\HiringFair.Models\obj\Debug\HiringFair.Models.pdb

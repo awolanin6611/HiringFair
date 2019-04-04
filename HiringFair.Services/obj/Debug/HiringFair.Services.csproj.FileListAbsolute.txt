@@ -1,0 +1,16 @@
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Services.dll.config
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Services.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Services.pdb
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\EntityFramework.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\EntityFramework.xml
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.csprojAssemblyReference.cache
+C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.csproj.CoreCompileInputs.cache
+C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.csproj.CopyComplete
+C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.pdb
