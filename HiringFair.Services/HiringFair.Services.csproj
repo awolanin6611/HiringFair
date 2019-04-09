@@ -54,11 +54,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeService.cs" />
+    <Compile Include="IEmployeeService.cs" />
+    <Compile Include="ISchoolService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchoolService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HiringFair.Data\HiringFair.Data.csproj">
+      <Project>{E69B63C7-038D-44BA-B939-D0873EA1CB5B}</Project>
+      <Name>HiringFair.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HiringFair.Models\HiringFair.Models.csproj">
+      <Project>{4E2F6235-62BC-4338-930C-9CD025C11FE5}</Project>
+      <Name>HiringFair.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

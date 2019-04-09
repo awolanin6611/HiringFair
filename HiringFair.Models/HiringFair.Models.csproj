@@ -54,8 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeCreate.cs" />
+    <Compile Include="EmployeeDetail.cs" />
+    <Compile Include="EmployeeEdit.cs" />
     <Compile Include="EmployeeListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchoolCreate.cs" />
+    <Compile Include="SchoolDetail.cs" />
+    <Compile Include="SchoolEdit.cs" />
+    <Compile Include="SchoolListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

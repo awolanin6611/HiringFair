@@ -14,3 +14,9 @@ C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.csproj
 C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.csproj.CopyComplete
 C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.dll
 C:\BlueBadge\HiringFair\HiringFair.Services\obj\Debug\HiringFair.Services.pdb
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Data.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Models.dll
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Data.pdb
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Data.dll.config
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Models.pdb
+C:\BlueBadge\HiringFair\HiringFair.Services\bin\Debug\HiringFair.Models.dll.config
