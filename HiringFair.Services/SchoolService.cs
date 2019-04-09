@@ -39,7 +39,7 @@ namespace HiringFair.Services
             {
                 var query =
                     ctx
-                    .Employees
+                    .Schools
                     .Select(
                     e =>
                         new SchoolListItem
@@ -47,7 +47,7 @@ namespace HiringFair.Services
                             SchoolId = e.SchoolId,
                             SchoolName = e.SchoolName,
                             SchoolLocation = e.SchoolLocation,
-                            TypeofDegree = e.TypeofDegree,
+                            TypeofDegree = e.TypeOfDegree,
                             YearsAtSchool = e.YearsAtSchool,
                         }
                         );
@@ -60,8 +60,25 @@ namespace HiringFair.Services
             {
                 var entity = ctx
                     .Schools
+                    .Single(e => e.SchoolId == schoolId);
+
+                return
+                    new SchoolDetail
+                    {
+                        SchoolId = entity.SchoolId,
+                        SchoolName = entity.SchoolName,
+                        SchoolLocation = entity.SchoolLocation,
+                        TypeofDegree = entity.TypeOfDegree,
+                        YearsAtSchool = entity.YearsAtSchool,
+                    };
             }
         }
+
+        public bool UpdateSchool(SchoolEdit model)
+        {
+            using (var ctx = new)
+        }
+
 
     }
 }

@@ -38,6 +38,7 @@ namespace HiringFair.Data
             return new ApplicationDbContext();
         }
         public DbSet<Employee> Employees  { get; set; }
+        public DbSet<School> Schools { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
