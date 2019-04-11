@@ -12,12 +12,27 @@ namespace HiringFair.Data.Migrations
                 c => new
                     {
                         EmployeeId = c.Int(nullable: false, identity: true),
+                        SchoolId = c.Int(nullable: false),
                         Name = c.String(nullable: false),
                         Age = c.Int(nullable: false),
                         Gender = c.String(nullable: false),
                         Race = c.String(nullable: false),
                     })
-                .PrimaryKey(t => t.EmployeeId);
+                .PrimaryKey(t => t.EmployeeId)
+                .ForeignKey("dbo.School", t => t.SchoolId, cascadeDelete: true)
+                .Index(t => t.SchoolId);
+            
+            CreateTable(
+                "dbo.School",
+                c => new
+                    {
+                        SchoolId = c.Int(nullable: false, identity: true),
+                        SchoolName = c.String(nullable: false),
+                        SchoolLocation = c.String(nullable: false),
+                        YearsAtSchool = c.Int(nullable: false),
+                        TypeOfDegree = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.SchoolId);
             
             CreateTable(
                 "dbo.IdentityRole",
@@ -97,15 +112,18 @@ namespace HiringFair.Data.Migrations
             DropForeignKey("dbo.IdentityUserLogin", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserClaim", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserRole", "IdentityRole_Id", "dbo.IdentityRole");
+            DropForeignKey("dbo.Employee", "SchoolId", "dbo.School");
             DropIndex("dbo.IdentityUserLogin", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserClaim", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "IdentityRole_Id" });
+            DropIndex("dbo.Employee", new[] { "SchoolId" });
             DropTable("dbo.IdentityUserLogin");
             DropTable("dbo.IdentityUserClaim");
             DropTable("dbo.ApplicationUser");
             DropTable("dbo.IdentityUserRole");
             DropTable("dbo.IdentityRole");
+            DropTable("dbo.School");
             DropTable("dbo.Employee");
         }
     }

@@ -28,6 +28,7 @@ namespace HiringFair.Services
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Schools.Add(entity);
+
                 return ctx.SaveChanges() == 1;
             }
         }
@@ -76,7 +77,34 @@ namespace HiringFair.Services
 
         public bool UpdateSchool(SchoolEdit model)
         {
-            using (var ctx = new)
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Schools
+                    .Single(e => e.SchoolId == model.SchoolId);
+                    entity.SchoolId = model.SchoolId;
+                entity.SchoolName = model.SchoolName;
+                entity.SchoolLocation = model.SchoolLocation;
+                entity.TypeOfDegree = model.TypeofDegree;
+                entity.YearsAtSchool = model.YearsAtSchool;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteSchool(int schoolId)
+        {
+            using (var ctx =  new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Schools
+                    .Single(e => e.SchoolId == schoolId);
+
+                ctx.Schools.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
         }
 
 

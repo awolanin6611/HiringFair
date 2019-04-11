@@ -1,0 +1,51 @@
+﻿@model IEnumerable<HiringFair.Models.SchoolListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SchoolName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SchoolLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearsAtSchool)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeofDegree)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SchoolName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SchoolLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearsAtSchool)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeofDegree)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.SchoolId }) |
+            @Html.ActionLink("Detail", "Detail", new { id = item.SchoolId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.SchoolId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -56,17 +56,22 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\201904041918356_InitialCreate.cs" />
-    <Compile Include="Migrations\201904041918356_InitialCreate.Designer.cs">
-      <DependentUpon>201904041918356_InitialCreate.cs</DependentUpon>
+    <Compile Include="Job.cs" />
+    <Compile Include="Migrations\201904102000114_InitialCreate.cs" />
+    <Compile Include="Migrations\201904102000114_InitialCreate.Designer.cs">
+      <DependentUpon>201904102000114_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904052002376_firstMigration.cs" />
-    <Compile Include="Migrations\201904052002376_firstMigration.Designer.cs">
-      <DependentUpon>201904052002376_firstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201904102031558_firstmigration.cs" />
+    <Compile Include="Migrations\201904102031558_firstmigration.Designer.cs">
+      <DependentUpon>201904102031558_firstmigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904092034358_schools.cs" />
-    <Compile Include="Migrations\201904092034358_schools.Designer.cs">
-      <DependentUpon>201904092034358_schools.cs</DependentUpon>
+    <Compile Include="Migrations\201904111314202_jobs.cs" />
+    <Compile Include="Migrations\201904111314202_jobs.Designer.cs">
+      <DependentUpon>201904111314202_jobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904111359583_jobs2.cs" />
+    <Compile Include="Migrations\201904111359583_jobs2.Designer.cs">
+      <DependentUpon>201904111359583_jobs2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,14 +82,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904041918356_InitialCreate.resx">
-      <DependentUpon>201904041918356_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904102000114_InitialCreate.resx">
+      <DependentUpon>201904102000114_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904052002376_firstMigration.resx">
-      <DependentUpon>201904052002376_firstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904102031558_firstmigration.resx">
+      <DependentUpon>201904102031558_firstmigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904092034358_schools.resx">
-      <DependentUpon>201904092034358_schools.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904111314202_jobs.resx">
+      <DependentUpon>201904111314202_jobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904111359583_jobs2.resx">
+      <DependentUpon>201904111359583_jobs2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

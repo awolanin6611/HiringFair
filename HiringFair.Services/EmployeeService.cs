@@ -23,7 +23,8 @@ namespace HiringFair.Services
                 Name = model.Name,
                 Age = model.Age,
                 Gender = model.Gender,
-                Race = model.Race
+                Race = model.Race,
+               
             };
 
             using (var ctx = new ApplicationDbContext())
@@ -52,6 +53,9 @@ namespace HiringFair.Services
                                 Age = e.Age,
                                 Gender = e.Gender,
                                 Race = e.Race,
+                               
+                                
+                               
                             }
                         );
                 return query.ToArray();
@@ -74,6 +78,7 @@ namespace HiringFair.Services
                         Age = entity.Age,
                         Gender = entity.Gender,
                         Race = entity.Race,
+                        
                     };
             }
         }
@@ -90,6 +95,7 @@ namespace HiringFair.Services
                 entity.Age = model.Age;
                 entity.Gender = model.Gender;
                 entity.Race = model.Race;
+                
 
                 return ctx.SaveChanges() == 1;
             }

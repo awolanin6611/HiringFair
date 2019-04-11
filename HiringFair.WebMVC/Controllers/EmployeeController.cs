@@ -48,7 +48,7 @@ namespace HiringFair.WebMVC.Controllers
             return View(model);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Detail(int id)
         {
             var model = _employeeService.Value.GetEmployeeById(id);
             return View(model);

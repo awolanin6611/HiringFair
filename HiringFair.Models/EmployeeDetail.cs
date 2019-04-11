@@ -17,5 +17,7 @@ namespace HiringFair.Models
         public string Gender { get; set; }
 
         public string Race { get; set; }
+        public int SchoolId { get; set; }
+        
     }
 }

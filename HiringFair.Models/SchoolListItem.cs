@@ -13,5 +13,9 @@ namespace HiringFair.Models
         public string SchoolLocation { get; set; }
         public int YearsAtSchool { get; set; }
         public string TypeofDegree { get; set; }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

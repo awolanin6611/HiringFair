@@ -13,7 +13,7 @@ namespace HiringFair.Services
         IEnumerable<SchoolListItem> GetSchools();
         SchoolDetail GetSchoolById(int schoolId);
         bool UpdateSchool(SchoolEdit model);
-        bool DeleteSChool(int schoolId);
+        bool DeleteSchool(int schoolId);
 
     }
 }

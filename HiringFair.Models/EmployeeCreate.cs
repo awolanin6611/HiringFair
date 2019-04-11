@@ -27,5 +27,8 @@ namespace HiringFair.Models
         [MaxLength(128)]
         public string Race { get; set; }
 
+        
+
+
     }
 }

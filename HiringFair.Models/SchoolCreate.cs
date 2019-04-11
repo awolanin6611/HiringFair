@@ -18,7 +18,7 @@ namespace HiringFair.Models
         [MinLength(2, ErrorMessage = "Please Enter the Location of your School.")]
         [MaxLength(128)]
         public string SchoolLocation { get; set; }
-
+        [Required]
         public int YearsAtSchool { get; set; }
 
         [Required]

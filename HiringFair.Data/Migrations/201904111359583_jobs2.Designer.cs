@@ -7,13 +7,13 @@ namespace HiringFair.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class schools : IMigrationMetadata
+    public sealed partial class jobs2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(schools));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(jobs2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904092034358_schools"; }
+            get { return "201904111359583_jobs2"; }
         }
         
         string IMigrationMetadata.Source

@@ -16,5 +16,6 @@ C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.dll
 C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.pdb
 C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.InitialCreate.resources
 C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.csproj.GenerateResource.cache
-C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.firstMigration.resources
-C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.schools.resources
+C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.firstmigration.resources
+C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.jobs.resources
+C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.jobs2.resources

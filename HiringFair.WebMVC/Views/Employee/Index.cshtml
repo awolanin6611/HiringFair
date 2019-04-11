@@ -21,9 +21,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.EmployeeId)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
@@ -42,9 +39,6 @@
 {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.EmployeeId)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
@@ -56,10 +50,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.Race)
         </td>
+        
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId})|
-            @Html.ActionLink("Details", "Detail", new { id = item.EmployeeId}) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId})
+            @Html.ActionLink("Add School", "Create", "School")|
+            @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId })|
+            @Html.ActionLink("Detail", "Detail", new { id = item.EmployeeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })
         </td>
     </tr>
 }

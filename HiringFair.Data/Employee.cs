@@ -11,6 +11,7 @@ namespace HiringFair.Data
     {
         [Key]
         public int EmployeeId { get; set; }
+        
         [Required]
         public string Name { get; set; }
         [Required]
@@ -19,5 +20,9 @@ namespace HiringFair.Data
         public string Gender { get; set; }
         [Required]
         public string Race { get; set; }
+
+        public virtual School School { get; set; }
+        
+
     }
 }
