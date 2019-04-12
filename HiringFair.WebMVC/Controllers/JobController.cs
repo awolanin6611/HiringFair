@@ -30,6 +30,14 @@ namespace HiringFair.WebMVC.Controllers
         }
         public ActionResult Create()
         {
+            var employerId = Guid.Parse(User.Identity.GetUserId());
+            var employerService = new EmployerService(employerId);
+            var employerList = employerService.GetEmployers();
+            ViewBag.EmployerId = new SelectList(employerList, "EmployerId", "CompanyName");
+            var employeeId = Guid.Parse(User.Identity.GetUserId());
+            var employeeService = new EmployeeService(employerId);
+            var employeeList = employeeService.GetEmployees();
+            ViewBag.EmployeeId = new SelectList(employeeList, "EmployeeId", "Name");
             return View();
         }
         [HttpPost]
@@ -47,12 +55,15 @@ namespace HiringFair.WebMVC.Controllers
         }
         public ActionResult Detail(int id)
         {
-            var model =
-                _jobService.Value.GetJobById(id);
+            var service = GetEmployeeService();
+            var services = GetEmployerService();
+            var model = _jobService.Value.GetJobById(id);
             return View(model);
         }
         public ActionResult Edit(int id)
         {
+            var service = GetEmployeeService();
+            var services = GetEmployerService();
             var detail =
                 _jobService.Value.GetJobById(id);
             var model =
@@ -62,6 +73,8 @@ namespace HiringFair.WebMVC.Controllers
                     JobTitle = detail.JobTitle,
                     JobField = detail.JobField,
                     JobDescription = detail.JobDescription,
+                    EmployeeId = detail.EmployeeId,
+                    //Name = detail.Name
                 };
             return View(model);
         }
@@ -69,6 +82,9 @@ namespace HiringFair.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, JobEdit model)
         {
+            var service = GetEmployeeService();
+            var services = GetEmployerService();
+
             if (!ModelState.IsValid) return View(model);
             if(model.JobId != id)
             {
@@ -85,6 +101,8 @@ namespace HiringFair.WebMVC.Controllers
         }
         public ActionResult Delete (int id)
         {
+            var service = GetEmployeeService();
+            var services = GetEmployerService();
             var model =
                 _jobService.Value.GetJobById(id);
             return View(model);
@@ -94,6 +112,8 @@ namespace HiringFair.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteJob(int id)
         {
+            var service = GetEmployeeService();
+            var services = GetEmployerService();
             _jobService.Value.DeleteJob(id);
 
             TempData["SaveResult"] = "You successfully delete the job.";
@@ -105,6 +125,21 @@ namespace HiringFair.WebMVC.Controllers
                 (User.Identity.GetUserId());
             var service = new JobService(jobId);
             return service;
+        }
+        private EmployeeService GetEmployeeService()
+        {
+            var employeeId = Guid.Parse
+                (User.Identity.GetUserId());
+            var service = new EmployeeService(employeeId);
+            return service;
+        }
+        private EmployerService GetEmployerService()
+        {
+            var employerId = Guid.Parse
+                (User.Identity.GetUserId());
+
+            var services = new EmployerService(employerId);
+            return services;
         }
     }
 }

@@ -40,6 +40,7 @@ namespace HiringFair.Data
         public DbSet<Employee> Employees  { get; set; }
         public DbSet<School> Schools { get; set; }
         public DbSet<Job> Jobs { get; set; }
+        public DbSet<Employer> Employers { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

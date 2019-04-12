@@ -22,6 +22,9 @@ namespace HiringFair.Services
                 JobTitle = model.JobTitle,
                 JobField = model.JobField,
                 JobDescription = model.JobDescription,
+                EmployeeId = model.EmployeeId,
+                EmployerId = model.EmployerId,
+                
             };
             using (var ctx = new ApplicationDbContext())
             {
@@ -66,6 +69,11 @@ namespace HiringFair.Services
                         JobTitle = entity.JobTitle,
                         JobField = entity.JobField,
                         JobDescription = entity.JobDescription,
+                        EmployeeId = entity.EmployeeId,
+                        EmployeeName = entity.Employee.Name,
+                        EmployerId = entity.EmployerId,
+                        EmployerName = entity.Employer.CompanyName
+
                     };
             }
         }
@@ -81,6 +89,9 @@ namespace HiringFair.Services
                 entity.JobTitle = model.JobTitle;
                 entity.JobField = model.JobField;
                 entity.JobDescription = model.JobDescription;
+                entity.EmployeeId = model.EmployeeId;
+                //entity.Employee.Name = model.EmployeeName;
+                entity.EmployerId = model.EmployerId;
 
                 return ctx.SaveChanges() == 1;
             }

@@ -18,8 +18,15 @@ namespace HiringFair.Data
         [Required]
         public string JobDescription { get; set; }
 
+        public int EmployeeId { get; set; }
+
+        public int EmployerId { get; set; }
+        
+
         public virtual Employee Employee { get; set; }
-        public virtual School School { get; set; }
+
+        public virtual Employer Employer { get; set; }
+
 
     }
 }

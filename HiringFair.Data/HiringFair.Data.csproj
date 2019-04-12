@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.cs" />
+    <Compile Include="Employer.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="Migrations\201904102000114_InitialCreate.cs" />
@@ -72,6 +73,18 @@
     <Compile Include="Migrations\201904111359583_jobs2.cs" />
     <Compile Include="Migrations\201904111359583_jobs2.Designer.cs">
       <DependentUpon>201904111359583_jobs2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904121517423_employer.cs" />
+    <Compile Include="Migrations\201904121517423_employer.Designer.cs">
+      <DependentUpon>201904121517423_employer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904121550184_jobtoemployer.cs" />
+    <Compile Include="Migrations\201904121550184_jobtoemployer.Designer.cs">
+      <DependentUpon>201904121550184_jobtoemployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904121723168_jobjobs.cs" />
+    <Compile Include="Migrations\201904121723168_jobjobs.Designer.cs">
+      <DependentUpon>201904121723168_jobjobs.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +106,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904111359583_jobs2.resx">
       <DependentUpon>201904111359583_jobs2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904121517423_employer.resx">
+      <DependentUpon>201904121517423_employer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904121550184_jobtoemployer.resx">
+      <DependentUpon>201904121550184_jobtoemployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904121723168_jobjobs.resx">
+      <DependentUpon>201904121723168_jobjobs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

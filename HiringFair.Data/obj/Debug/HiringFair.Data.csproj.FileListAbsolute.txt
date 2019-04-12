@@ -19,3 +19,6 @@ C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.csproj.Generat
 C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.firstmigration.resources
 C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.jobs.resources
 C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.jobs2.resources
+C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.employer.resources
+C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.jobtoemployer.resources
+C:\BlueBadge\HiringFair\HiringFair.Data\obj\Debug\HiringFair.Data.Migrations.jobjobs.resources

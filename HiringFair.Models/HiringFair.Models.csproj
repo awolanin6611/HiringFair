@@ -58,6 +58,10 @@
     <Compile Include="EmployeeDetail.cs" />
     <Compile Include="EmployeeEdit.cs" />
     <Compile Include="EmployeeListItem.cs" />
+    <Compile Include="EmployerCreate.cs" />
+    <Compile Include="EmployerDetail.cs" />
+    <Compile Include="EmployerEdit.cs" />
+    <Compile Include="EmployerListItem.cs" />
     <Compile Include="JobCreate.cs" />
     <Compile Include="JobDetail.cs" />
     <Compile Include="JobEdit.cs" />

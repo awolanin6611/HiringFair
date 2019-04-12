@@ -12,5 +12,9 @@ namespace HiringFair.Models
         public string JobField { get; set; }
         public string JobTitle { get; set; }
         public string JobDescription { get; set; }
+        public int EmployeeId { get; set; }
+        public string EmployeeName { get; set; }
+        public int EmployerId { get; set; }
+        public string EmployerName { get; set; }
     }
 }
