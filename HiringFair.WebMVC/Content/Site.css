@@ -1,7 +1,31 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #FFFFFF;
 }
+.navbar-inverse .navbar-brand {
+    background-color: #071741;
+    color: white;
+}
+.navbar {
+    background-color: #071741;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+.jumbotron {
+    background-color: #FFFFFF;
+    color: black;
+}
+.row .card-body {
+    border: inset;
+    border-radius: 10px;
+    border-color: #000000;
+    background-color: #071741;
+    color:white;
+}
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {

@@ -4,11 +4,8 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Your Information</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 @if (TempData.ContainsKey("SaveResult"))
 {
     <div class="alert alert-success fade in" role="alert">
@@ -61,5 +58,8 @@
 }
 
 </table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 
 
