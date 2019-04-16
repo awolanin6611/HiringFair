@@ -1,7 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #FFFFFF;
+    background-image: url(https://images.pexels.com/photos/2116599/pexels-photo-2116599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
 }
 .navbar-inverse .navbar-brand {
     background-color: #071741;
@@ -15,7 +17,10 @@
     color: white;
 }
 .jumbotron {
+    margin-top:30px;
     background-color: #FFFFFF;
+    border: inset;
+    border-color: #000000;
     color: black;
 }
 .row .card-body {
@@ -24,6 +29,15 @@
     border-color: #000000;
     background-color: #071741;
     color:white;
+}
+#invisible .card-body {
+    background-color: #FFFFFF;
+}
+.table {
+    background-color: #071741;
+    color: white;
+    border:6px groove black;
+    padding: 50px 50px 50px 50px;
 }
 
 
