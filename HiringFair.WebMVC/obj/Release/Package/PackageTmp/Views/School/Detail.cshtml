@@ -1,0 +1,58 @@
+﻿@model HiringFair.Models.SchoolDetail
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>SchoolDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsAtSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsAtSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeofDegree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeofDegree)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SchoolId}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

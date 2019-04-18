@@ -1,0 +1,64 @@
+﻿@model HiringFair.Models.SchoolDetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SchoolDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsAtSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsAtSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeofDegree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeofDegree)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
