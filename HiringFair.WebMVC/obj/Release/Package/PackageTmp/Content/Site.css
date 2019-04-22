@@ -4,7 +4,7 @@
 
 
 body {
-    padding-top: 50px;
+    
     padding-bottom: 20px;
     background-image: url(https://images.pexels.com/photos/2116599/pexels-photo-2116599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center;
@@ -27,6 +27,7 @@ body {
     color: white;
 }
 
+
 .jumbotron {
     font-family: 'Abril Fatface', cursive;
     margin-top: 30px;
@@ -46,17 +47,17 @@ body {
     color: white;
 }
 
-#invisible .card-body {
-    background-color: #FFFFFF;
-}
 
-.table{
+
+
+.table {
     font-family: 'Patua One', cursive;
     background-color: #071741;
     color: white;
     border: 6px groove black;
     padding: 50px 50px 50px 50px;
 }
+
 .company {
     font-family: 'Abril Fatface', cursive;
     margin-top: 30px;
@@ -64,8 +65,8 @@ body {
     border: inset;
     border-color: #000000;
     color: black;
-    
 }
+
 .employee {
     font-family: 'Abril Fatface', cursive;
     margin-top: 30px;
@@ -74,7 +75,8 @@ body {
     border-color: #000000;
     color: black;
 }
-.school{
+
+.school {
     font-family: 'Abril Fatface', cursive;
     margin-top: 30px;
     background-color: #6E768A;
