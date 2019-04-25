@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringFair.Models", "Hiring
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringFair.Services", "HiringFair.Services\HiringFair.Services.csproj", "{D50F64A6-9486-435A-811E-89E4F678A300}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringFair.API", "HiringFair.API\HiringFair.API.csproj", "{BC9BA152-B3CD-4A11-9C74-0CCBE5307CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D50F64A6-9486-435A-811E-89E4F678A300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D50F64A6-9486-435A-811E-89E4F678A300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D50F64A6-9486-435A-811E-89E4F678A300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9BA152-B3CD-4A11-9C74-0CCBE5307CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BA152-B3CD-4A11-9C74-0CCBE5307CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BA152-B3CD-4A11-9C74-0CCBE5307CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9BA152-B3CD-4A11-9C74-0CCBE5307CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
